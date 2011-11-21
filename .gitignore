@@ -1,0 +1,6 @@
+## Exclude file used by compilators, interpreters, etc.
+*/bin/*
+*/gen/*
+
+## Exclude Mac OS X files
+*.DS_Store
