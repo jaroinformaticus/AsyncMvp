@@ -427,7 +427,7 @@ public class AsyncHttpClient {
 	 */
 	public void get(Context context, AsyncHttpRequestParams params, IAsyncHttpResponseHandler responseHandler, int protocol,
 			int cacheProtocol) {
-		sendRequest(httpClient, httpContext, new HttpGet(params.getParamString()), null, responseHandler, context, protocol,
+		sendRequest(httpClient, httpContext, new HttpGet(params.toString()), null, responseHandler, context, protocol,
 				cacheProtocol, Integer.toString(params.toString().hashCode()));
 	}
 
